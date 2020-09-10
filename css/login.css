@@ -1,0 +1,24 @@
+.bg-cover {
+    /* ..goes back in the directory I think */
+    background-image: url("../images/background_main.png");
+    /* vh is view height */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.center-me {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-signin {
+    padding: 20px;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 4px;
+}
