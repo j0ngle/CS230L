@@ -1,13 +1,14 @@
 <?php
 require 'includes/header.php';
+require 'includes/dbhandler.php';
 ?>
 
 <main>
 <link rel="stylesheet" href="css/gallery.css">
+<link href="css/reviews.css" rel="stylesheet">
     <h1>Gallery</h1>
     <div class="gallery-container">
         <?php
-            include_once 'includes/dbhandler.php';
             $sql = "SELECT * FROM movies ORDER BY upload_date DESC";
             $stmt = mysqli_stmt_init($conn);
 
