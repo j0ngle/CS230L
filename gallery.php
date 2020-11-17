@@ -21,7 +21,7 @@ require 'includes/dbhandler.php';
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo '<div class="card">
                         <a href="review.php?id='.$row['id'].'">
-                            <img src="images/gallery_images/'.$row["gallery_pic"].'">
+                            <img src="images/gallery_images/'.$row["gallery_pic"].'" style="width:216px; height:320px">
                             <h3>'.$row["title"].'</h3>
                         </a>
                     </div>';
