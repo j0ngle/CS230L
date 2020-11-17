@@ -6,10 +6,10 @@ require 'includes/dbhandler.php';
 <main>
 <link rel="stylesheet" href="css/gallery.css">
 <link href="css/reviews.css" rel="stylesheet">
-    <h1>Gallery</h1>
+    <h1>Movies</h1>
     <div class="gallery-container">
         <?php
-            $sql = "SELECT * FROM movies ORDER BY upload_date DESC";
+            $sql = "SELECT * FROM movieentry";
             $stmt = mysqli_stmt_init($conn);
 
             if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -20,8 +20,8 @@ require 'includes/dbhandler.php';
                 $result = mysqli_stmt_get_result($stmt);
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo '<div class="card">
-                        <a href="review.php?id='.$row['pid'].'">
-                            <img src="movies/'.$row["picpath"].'">
+                        <a href="review.php?id='.$row['id'].'">
+                            <img src="images/gallery_images/'.$row["gallery_pic"].'">
                             <h3>'.$row["title"].'</h3>
                             <p>'.$row["descript"].'</p>
                         </a>
