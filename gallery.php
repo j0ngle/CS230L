@@ -7,7 +7,7 @@ require 'includes/dbhandler.php';
 <link rel="stylesheet" href="css/gallery.css">
 <link href="css/reviews.css" rel="stylesheet">
     <h1>Movies</h1>
-    <div class="gallery-container">
+    <div class="gallery-container max-height:400">
         <?php
             $sql = "SELECT * FROM movieentry";
             $stmt = mysqli_stmt_init($conn);

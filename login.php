@@ -52,6 +52,7 @@
                         </label>
                     </div>
                     <button class="btn btn-lg btn-dark btn-block" name="login-submit" type="submit">Sign in</button>
+                    <div style="padding-top:16px"><a href="signup.php">New? Sign up here!</a><div>
                     <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
                 </form>
             </div>
