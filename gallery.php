@@ -23,7 +23,6 @@ require 'includes/dbhandler.php';
                         <a href="review.php?id='.$row['id'].'">
                             <img src="images/gallery_images/'.$row["gallery_pic"].'">
                             <h3>'.$row["title"].'</h3>
-                            <p>'.$row["descript"].'</p>
                         </a>
                     </div>';
                 }
